@@ -3,17 +3,15 @@ var sentence = prompt("Write a sentence: ");
 alert(sentence);
 
 var capitalizeFirstLast = function(sentence){
-  var removeLetter = sentence.substring(1, sentence.length-1)
-  var newSentence = sentence[0].toUpperCase() + removeLetter + sentence[sentence.length-1].toUpperCase();
-  return newSentence;
+  var newString = sentence[0].toUpperCase() + sentence[sentence.length-1].toUpperCase();
+  return newString;
 }
 
 alert(capitalizeFirstLast(sentence));
 
 var reverseLetters = function(sentence){
-  var removeLetters = sentence.substring(1, sentence.length-1)
-  var newSentence = sentence[sentence.length-1] + removeLetters + sentence[0];
-  return newSentence;
+  var newString = sentence[sentence.length-1] + sentence[0];
+  return newString;
 }
 
 alert(reverseLetters(sentence));
